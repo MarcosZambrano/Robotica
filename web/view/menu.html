@@ -1,0 +1,13 @@
+<p class="nav-title">
+    Opciones
+    <a href="#" class="pull-right">
+        <i class="glyphicon glyphicon-folder-open"></i>
+    </a>
+</p>
+<ul class="nav">
+    <li ng-repeat="opcion in opciones" ng-class="{active: isCurrentCategory(category)}">
+        <a href="#" ng-click="setCurrentCategory(category)">
+            <i class="glyphicon glyphicon-tags"></i>
+            {{opcion}}</a>
+    </li>
+</ul>
