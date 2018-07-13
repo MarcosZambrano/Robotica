@@ -1,3 +1,20 @@
+/* Rectangulo ddefine productos a cultivar */
+.square {
+  height: 40px;
+  width: 80px;
+  background-color: red;
+  color:black;
+  font-size: 14px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.divCenter {
+  display: flex;
+  justify-content: space-around;
+}
+
 /* Bloquear Header de la tabla */
 .table-scroll thead {
     display: table;
