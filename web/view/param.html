@@ -1,0 +1,42 @@
+<div class="full col-sm-12">
+  <br>
+  <br>
+  <h1>PRODUCTOS A PROCESAR</h1>
+  <hr>
+  <h2>
+    <br>
+    <a href="#" class="btn btn-primary btn-xs pull-right" ng-click="initProcess()">
+        <i class="glyphicon glyphicon-plus-sign"></i>
+         Iniciar Procesamiento</a>
+  </h2>
+  <h4>Introduzca valores iniciales del producto</h4>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Producción inicial</th>
+        <th>Importación inicial</th>
+        <th>Periodo de Incremento</th>
+        <th>Capacidad Máximo</th>
+        <th>Unidad</th>
+        <th>Color</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="text" ng-model="paramProduct.name"></td>
+        <td><input type="text" ng-model="paramProduct.cultivateInit"></td>
+        <td><input type="text" ng-model="paramProduct.importInit"></td>
+        <td><input type="text" ng-model="paramProduct.period"></td>
+        <td><input type="text" ng-model="paramProduct.maximum"></td>
+        <td>
+          <select ng-options="unit as unit.value for unit in units track by unit.id" ng-model="paramProduct.unit"></select>
+        </td>
+        <td>
+          <select ng-options="color as color.value for color in colors track by color.id" ng-model="paramProduct.color"></select>
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>

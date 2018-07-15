@@ -1,4 +1,4 @@
-<div class="modal fade" id="registroModal" tabindex="1" role="dialog"
+<div class="modal fade" id="recordModal" tabindex="1" role="dialog"
 aria-labelledby="myModalLabel" aria-hidden="false">
 <div class="modal-dialog">
   <div class="modal-content">
@@ -21,7 +21,7 @@ aria-labelledby="myModalLabel" aria-hidden="false">
                     <div class="input-group-addon">
                         <i class="glyphicon glyphicon-user"></i>
                     </div>
-                    <input ng-model="robotica.demanda" required name=demanda id="demanda"
+                    <input ng-model="iteration.consume" required name=demanda id="demanda"
                     class="form-control" type="text"
                     placeholder="Introduzca la demanda a procesar">
                 </div>
@@ -33,7 +33,7 @@ aria-labelledby="myModalLabel" aria-hidden="false">
                     <div class="input-group-addon">
                         <i class="glyphicon glyphicon-stats"></i>
                     </div>
-                    <input ng-model="robotica.producir" required name="producir" id="producir"
+                    <input ng-model="iteration.xCultivate" required name="producir" id="producir"
                     class="form-control" type="text"
                     placeholder="Introduzca la cantidad de cultivos">
                 </div>
@@ -45,7 +45,7 @@ aria-labelledby="myModalLabel" aria-hidden="false">
                     <div class="input-group-addon">
                         <i class="glyphicon glyphicon-link"></i>
                     </div>
-                    <input ng-model="robotica.importar" required name="importar" id="importar"
+                    <input ng-model="iteration.xImport" required name="importar" id="importar"
                     class="form-control" type="text"
                     placeholder="Introduzca la cantidad de importaciones">
                 </div>
@@ -54,8 +54,8 @@ aria-labelledby="myModalLabel" aria-hidden="false">
         </form>
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-      <button ng-click="procesar(robotica)" type="button" class="btn btn-primary">Procesar</button>
+      <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
+      <button ng-click="process(iteration)" type="button" class="btn btn-success">Procesar</button>
     </div>
   </div>
 </div>

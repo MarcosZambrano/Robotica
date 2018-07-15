@@ -1,8 +1,30 @@
+.nav-title{
+  margin-top: 80px;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+/* button recolor */
+.nav-pills > li.active > a {
+  font-size: 12px;
+  background-color: #6C6C6C !important;
+  // Redondear el borde  - selecionar
+  border-color: #6C6C6C !important;
+  border-radius: 25px;
+}
+
+.main {
+    font-size: 12px;
+    background-color: #A3E4D7 !important;
+    color: black;
+    height: 638px;
+}
+
+
 /* Rectangulo ddefine productos a cultivar */
 .square {
   height: 40px;
   width: 80px;
-  background-color: red;
   color:black;
   font-size: 14px;
   text-align: center;
@@ -15,52 +37,14 @@
   justify-content: space-around;
 }
 
-/* Bloquear Header de la tabla */
-.table-scroll thead {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-}
-
-/* Scroll de la tabla */
-.table-scroll tbody {
-    padding-bottom: 25px;
-    height: 200px;
-    overflow-y: scroll;
-    display: block;
-    width: 100%;
-    table-layout: fixed;
-    background-color:#F5F5F5;
-}
-
-.table-scroll tr {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-}
-
-.table-scroll td {
-    height: 15px;
-}
-
-/* custom template */
-html, body {
-   height: 100%;
-   font-family:'Open Sans',arial,sans-serif;
-}
-
 .header{
-    background-color: #1582dc;
+    background-color: #001a33;
     min-height: 50px;
     z-index: 1000;
     border-radius: 0;
     border: 0;
     margin: 0;
     padding: 0;
-}
-
-.header .brand{
-    background-color: #147bd0;
 }
 
 .header .brand i{
@@ -80,77 +64,14 @@ html, body {
     padding-bottom: 0;
 }
 
-.wrapper, .row {
-   height: 100%;
-   margin-left:0;
-   margin-right:0;
-}
-
-.wrapper:before, .wrapper:after,
-.column:before, .column:after {
-    content: "";
-    display: table;
-}
-
-.wrapper:after,
-.column:after {
-    clear: both;
-}
-
-.column {
-    height: 100%;
-    overflow: auto;
-    *zoom:1;
-}
-
-.column .padding {
-    padding: 20px;
-}
-
 .box {
     bottom: 0; /* increase for footer use */
     left: 0;
     position: absolute;
     right: 0;
     top: 0;
-    background-color: #2e353d;
-    color: #98a8b9;
-}
-
-
-#main {
-    background: #f1f4f9;
-    height: 638px;
-}
-
-#main h2{
-  margin: 80px 0 20px 0;
-  font-weight: normal;
-  color: rgb(89, 89, 90);
-  font-size: 17px;
-}
-
-#main .full ul{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-#main .full ul i{
-  float:right;
-  margin:0 5px;
-  display:none;
-  cursor: pointer;
-}
-
-#main .full ul li:hover i{
-  display:inline-block;
-}
-
-#sidebar .nav-title{
-  margin-top: 80px;
-  text-transform: uppercase;
-  font-size: 11px;
+    background-color: #1C2833;
+    color: White;
 }
 
 #sidebar a{
@@ -167,42 +88,4 @@ html, body {
 #sidebar .active a{
   background: transparent;
   color:#fff;
-}
-#sidebar a i{
-  margin-right: 20px;
-}
-
-
-/* center and adjust the sidebar contents on smaller devices */
-@media (max-width: 768px) {
-  #sidebar,#sidebar a.logo {
-    text-align:center;
-    margin:0 auto;
-    margin-top:30px;
-    font-size:26px;
-  }
-  #sidebar a.logo {
-    font-size:50px;
-    height:75px;
-    width:75px;
-    margin-bottom:30px;
-  }
-
-  #main .full ul li i{
-    display:inline-block;
-  }
-}
-
-
-
-
-/* bootstrap overrides */
-
-h1,h2,h3 {
-   font-weight:800;
-   font-family:'Open Sans',arial,sans-serif;
-}
-
-.col-sm-9.full {
-    width: 100%;
 }
