@@ -216,7 +216,17 @@
           objDiv.style.height = "5%";
           objDiv.setAttribute("align", "center");
 
-          move();
+		  if($scope.xCultivate !== 0){
+			move();
+		  } else {
+			  objDiv.innerHTML = "";
+                objDiv.style.background ="";
+                $scope.cultivating +=  parseInt($scope.xCultivate);
+                $scope.xCultivate = 0;
+                $scope.labelStore = "";
+                $scope.showButton = true;
+                $scope.$apply();
+		  }
 
           function move() {
             var objDiv = document.getElementById('progress');
